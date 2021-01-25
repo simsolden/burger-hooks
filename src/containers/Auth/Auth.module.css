@@ -1,0 +1,31 @@
+.Form {
+  margin: 25vh auto;
+  width: 80%;
+  text-align: center;
+  box-shadow: 0 2px 3px #ccc;
+  border: 1px solid #eee;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+.Form:focus-within {
+  box-shadow: 0 10px 15px #ccc;
+  transform: scale(1.015);
+  @media screen and (prefers-reduced-motion: reduce) {
+    box-shadow: none;
+    transform: none;
+  }
+}
+
+.Input {
+  display: block;
+  padding: 10px;
+  margin: auto;
+}
+@media (min-width: 600px) {
+  .Form {
+    width: 500px;
+  }
+}
